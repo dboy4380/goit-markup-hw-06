@@ -456,28 +456,37 @@
         </button>
         <p class="modal-hidline">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <label class="modal-lable">
-            Имя
+          <label class="modal-lable"> Имя</label>
+          <div class="input-wrap">
             <input type="text" class="modal-input" name="user-name" required />
-          </label>
-          <label class="modal-lable">
-            Телефон
+            <svg class="modal-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-Vector-1-1"></use>
+            </svg>
+          </div>
+          <label class="modal-lable"> Телефон</label>
+          <div class="input-wrap">
             <input
               type="tel"
               class="modal-input"
               name="user-telepfone"
               required
             />
-          </label>
-          <label class="modal-lable">
-            Почта
+            <svg class="modal-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-Vector-2-1"></use>
+            </svg>
+          </div>
+          <label class="modal-lable"> Почта</label>
+          <div class="input-wrap">
             <input
               type="email"
               class="modal-input"
               name="user-email"
               required
             />
-          </label>
+            <svg class="modal-icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-Vector-3-1"></use>
+            </svg>
+          </div>
           <label for="user-text" class="modal-lable">
             Комментарий
             <textarea
@@ -487,7 +496,21 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
+          <div class="checkbox-position">
+            <input
+              type="checkbox"
+              name="privacy"
+              value="true"
+              class="modal-check"
+              id="privacy"
+            />
+            <label class="modal-check-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="modal-link">Условия договора</a></label
+            >
+          </div>
           <button type="submit" class="modal-btn">Отправить</button>
+          <link rel="stylesheet" href="" />
         </form>
       </div>
     </div>
